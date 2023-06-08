@@ -195,7 +195,7 @@ export default class ProductTypeExport {
     // > attributes:
     //   > add a line for every attribute that is not already added
     const { config: { outputFolder, compressOutput, exportFormat } } = this
-    const downloadFile = tempWrite.sync(null, 'product-types.json')
+    const downloadFile = tempWrite.sync('', 'product-types.json')
     const productAttributesFileName = `products-to-attributes.${exportFormat}`
     const attributesFileName = `attributes.${exportFormat}`
 
@@ -205,7 +205,6 @@ export default class ProductTypeExport {
     // create folders if they do not exist
     if (!existsSync(outFolder))
       mkdirSync(outFolder)
-
     return this.downloadProductTypes(downloadFile)
       .then(() => this.collectAttributes(downloadFile))
       .then(({ attributeNames, attributeKeys, allAttributeKeys }) => {
