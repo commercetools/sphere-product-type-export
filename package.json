@@ -102,8 +102,8 @@
     "jszip": "^3.0.0",
     "lodash": "^4.16.6",
     "minimist": "^1.2.0",
-    "sphere-node-sdk": "^2.1.2",
-    "sphere-node-utils": "^1.0.0",
+    "sphere-node-sdk": "^3.2.2",
+    "sphere-node-utils": "^2.0.1",
     "tape": "^4.6.0",
     "temp-write": "^2.1.0",
     "tempfile": "^1.1.1"
